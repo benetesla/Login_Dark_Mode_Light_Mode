@@ -24,7 +24,7 @@ body {
 
 .container {
     width: 500px;
-    height: 500px;
+    height: 600px;
     margin: 2rem 2rem 2rem 2rem;
     padding: 2.8rem 1.8rem;
     padding-top: 3.75rem;
@@ -99,6 +99,12 @@ body {
     padding-top: 0.5rem;
     cursor: pointer;
 }
+.button input:hover{
+    box-shadow: 0.31rem 0.31rem 0.31rem 0rem var(--shadow1),
+        inset -0.31rem 0.31rem 0.31rem 0rem var(--shadow2),
+        inset 0.31rem 0.31rem 0.31rem 0rem var(--shadow1),
+        inset -0.31rem 0.31rem 0.31rem 0rem var(--shadow2);
+}
 span {
     padding: 2rem 0rem;
 }
@@ -119,6 +125,13 @@ span lable {
     margin: 0rem 1rem;
     cursor: pointer;
     color: rgb(18, 56, 88);    
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--label-color);
+    text-align: center;
+    margin-top: 1.8rem;
 }
 #toggle{
     
