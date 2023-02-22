@@ -1,0 +1,133 @@
+:root {
+    --backgound-color: rgb(230, 230, 230);
+    --shadow1: rgba(119, 119, 119, 0.5);
+    --shadow2: rgba(119, 119, 119, 0.85);
+    --label-color: rgba(0, 0, 0, 0.8);
+    --displayProp: block;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    height: 150vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--backgound-color);
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    margin: 2rem 2rem 2rem 2rem;
+    padding: 2.8rem 1.8rem;
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+    border: 0.1rem solid var(--backgound-color);
+    box-shadow: 0.93rem 0.93rem 0.63rem 0.31rem var(--shadow1),
+        -0.93rem -0.93rem 0.63rem 0.31rem var(--shadow2),
+        inset 0.93rem 0.93rem 0.63rem 0.31rem var(--shadow1),
+        inset -0.93rem -0.93rem 0.63rem 0.31rem var(--shadow2);
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+    border-radius: 0rem 6.5rem 0rem 6.5rem;
+    min-height: 9.375rem;
+    display: var(--displayProp) !important;
+    background-color: var(--backgound-color)
+
+}
+
+.user-details {
+    margin-top: 1.8rem;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--label-color);
+
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin-top: 1.8rem;
+}
+
+.input-field {
+    width: 100%;
+    height: 3.1rem;
+    padding-left: 0.9rem;
+    font-size: 1.8rem;
+    border: 0.1rem solid var(--backgound-color);
+    outline: none;
+    background: transparent;
+    box-shadow: 0.31rem 0.62rem 0.5rem 0rem var(--shadow1),
+        inset -0.31rem 0.62rem 0.5rem 0rem var(--shadow2),
+        inset 0.31rem 0.62rem 0.5rem 0rem var(--shadow1),
+        inset -0.31rem 0.62rem 0.5rem 0rem var(--shadow2);
+    border-radius: 0.5rem;
+    padding-top: 0.5rem;
+}
+.input-field:active{
+    box-shadow: 0.31rem 0.31rem 0.31rem 0rem var(--shadow1),
+        inset -0.31rem 0.31rem 0.31rem 0rem var(--shadow2),
+        inset 0.31rem 0.31rem 0.31rem 0rem var(--shadow1),
+        inset -0.31rem 0.31rem 0.31rem 0rem var(--shadow2);
+}
+.button input {
+    width: 100%;
+    height: 3.1rem;
+    padding-left: 0.9rem;
+    font-size: 1.8rem;
+    border: 0.1rem solid var(--backgound-color);
+    outline: none;
+    background: transparent;
+    box-shadow: 0.31rem 0.62rem 0.5rem 0rem var(--shadow1),
+        inset -0.31rem 0.62rem 0.5rem 0rem var(--shadow2),
+        inset 0.31rem 0.62rem 0.5rem 0rem var(--shadow1),
+        inset -0.31rem 0.62rem 0.5rem 0rem var(--shadow2);
+    border-radius: 0.5rem;
+    padding-top: 0.5rem;
+    cursor: pointer;
+}
+span {
+    padding: 2rem 0rem;
+}
+span lable {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--label-color);
+}
+.social-media-icons {
+    margin-top: 1.8rem;
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-media-icons i {
+    font-size: 2.5rem;
+    margin: 0rem 1rem;
+    cursor: pointer;
+    color: rgb(18, 56, 88);    
+}
+#toggle{
+    
+    top: 0.5rem;
+    right: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--label-color);
+}
+#toggle:hover{
+    color: rgb(18, 56, 88);
+}
