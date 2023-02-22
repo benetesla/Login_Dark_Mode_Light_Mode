@@ -1,5 +1,6 @@
 let rootProp = document.documentElement.style;
 let mode = true;
+
 function ChangeModel() {
     if (mode) {
         darkmode();
@@ -21,4 +22,13 @@ function darkmode() {
     rootProp.setProperty("--shadow1", "rgba(0, 0, 0,0.5)");
     rootProp.setProperty("--shadow2", "rgba(0, 0, 0,0.85)");
     rootProp.setProperty("--label-color", "rgba(255, 255, 255,0.8)");
+}
+function login() {
+    let username = document.getElementById("username").value;
+    let password = document.getElementById("password").value;
+    if (username == "admin" && password == "admin") {
+        window.location.href = "home.html";
+    } else {
+        alert("Invalid username or password");
+    }
 }
